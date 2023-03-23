@@ -90,7 +90,7 @@ int	change_dir(char *path)
 	if (oldpwd)
 		free(oldpwd);
 	change_title();
-	ft_printf("\n%s\n",g_core.title.head)
+	ft_printf("\n%s\n",g_core.title.head);
 	return (1);
 }
 
