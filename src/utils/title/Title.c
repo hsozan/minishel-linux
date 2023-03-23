@@ -23,7 +23,7 @@ void	change_title(void)
 	g_core.title.full_title = NULL;
 	tmp = ft_strtonl(g_core.title.head);
 	tmp2 = getcwd(cwd, 256);
-	ft_printf("\n%s\n",tmp2);
+	ft_printf("\n%s\n",strrchr(tmp2, '/'));
 	own_strjoin1(&tmp, "-\033[0;32m[\033[0m");
 	if (tmp)
 		free(tmp);
